@@ -2,6 +2,39 @@
 
 import json, sys
 import random
+import pandas as pd
+import numpy as np
+
+
+SNOW_FileName = 'Sample.xlsx'
+
+df = pd.read_excel(SNOW_FileName, 'Sheet1', na_values=['NA'])
+dct = df.to_dict()
+
+# print(dct.keys())  ## print
+
+# for key, value in dct.items():
+	# print('Key : ' , key , ' and Values is :' , value)
+
+
+ServerNames = dct["Server_Name"]
+CPUVales = dct["CPU"]
+MemoryValues = dct["Memory"]
+for key, value in ServerNames.items():
+	print('Key : ' , key , ' and Values is :' , value)
+
+
+for key, value in CPUVales.items():
+	print('Key : ' , key , ' and Values is :' , value)
+
+
+for key, value in MemoryValues.items():
+	print('Key : ' , key , ' and Values is :' , value)
+
+
+
+
+
 
 output = {}
 returnObj = {}
@@ -27,10 +60,14 @@ for key, value in comparePairs.items():
 returnObj["result"] = output
 JsonReturnObj = json.dumps(returnObj)	
 
-print(JsonReturnObj)
+#print(JsonReturnObj)
 #return(JsonReturnObj)
-sys.exit()
+sys.exit(JsonReturnObj)
 
+
+
+
+#############################################################################################
 for key, value in a.items():
 	print('Key : ' , key , ' and Values is :' , value)
 	if key not in output:

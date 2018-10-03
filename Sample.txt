@@ -1,0 +1,17 @@
+Server_Name	CPU	Memory	AppID
+server1	4	2048	
+server2	4	2048	
+server3	4	2048	
+server4	8	4096	
+server5	8	4096	
+server6	8	4096	
+server7	8	4096	
+server8	8	4096	
+target1	2	2048	
+target2	2	2048	
+target3	4	2048	
+target4	4	2048	
+target5	4	2048	
+target6	8	2048	
+target7	8	2048	
+target8	4	8080	
