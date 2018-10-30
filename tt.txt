@@ -1,0 +1,73 @@
+							
+							
+							
+	Total number of SYS id's  that were compared 133						
+	51 Unique SYS id's with potential gaps listed below						
+							
+	Classified into 3 categores						
+							
+	1) VERSION MISMATCH:  i.e. windows version X in one environment but version Y of same product in other environment						
+	2) NO QA DATA: i.e. No QA data at all for a given SYS ID, Data is referenced in PROD						
+	3) NO PROD DATA: i.e. No PROD data at all for a given SYS ID, Data is referenced in QA						
+							
+							
+OS ISSUES	28 Total SYS IDS with (1 or more) issues						
+							
+							
+	VERSION MISMATCH:  0 SYS IDS						
+	0	                                                       					
+							
+							
+	NO QA DATA:  20 SYS IDS						
+	ART	FIR	RSK				
+	CFM	GCF	RTP				
+	CMI	MMD	SXR				
+	CMU	NPC	TSW				
+	CNS	OAM	TXP				
+	DTF	RDH	XPM				
+	DVP	RMG					
+							
+	NO PROD DATA:  12 SYS IDS						
+	CMI	PNO					
+	CON	RTP					
+	CTR	SEC					
+	DVP	SMD					
+	HER	SWF					
+	OAM						
+	OCM						
+							
+							
+							
+DB ISSUES	40 Total SYS IDS with (1 or more) issues						
+							
+	NOTE: All DB version mismatch  issues are SYBASE v15 in QA and v15.7 in PROD.						
+							
+	VERSION MISMATCH:   21 SYS IDS						
+	ATG Robert Leffler	IPN  George Bowen	PRC  Robert Leffler				
+	CFM  George Bowen	LQS  Robert Leffler	RSK Tammy Tyree				
+	FIR  Van Norian	NC1  Lisa Kastner	RSM Van Norian				
+	HEP  Sukumar Shetty	NCF  Tammy Tyree	RTP  Robert Leffler				
+	HER  Sukumar Shetty	NFI  Lisa Kastner	VA1  Robert Leffler				
+	IGW  Van Norian	NRC  Robert Leffler	VAN Van Norian				
+	IP1  George Bowen	PFD  Michael Reed	VAP  George Bpwen				
+							
+							
+	NO QA DATA:  34 SYS IDS						
+	ATG	HEP	NC1	PRC	SSC		
+	CFM	HER	NCF	RDH	TSW		
+	CNS	IDS	NFI	RFL	VA1		
+	CTR	IGW	NPC	RME	VAN		
+	EPN	IP1	NRC	RMG	VAP		
+	FIV	LQS	ODS	RSM	XPM		
+	GCF	MMD	PFD	RTP			
+							
+							
+	NO PROD DATA:  20 SYS IDS						
+	ATG	LQS	PNO				
+	CON	NC1	RFL				
+	FIV	NCF	RSM				
+	HEP	NFI	VA1				
+	HER	NRC	VAN				
+	IP1	OAM	VAP				
+	IPN	PFD					
+			
