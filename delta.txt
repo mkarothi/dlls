@@ -1,0 +1,237 @@
+SYS ID	"Server 
+Counts"	OS			Database			Summary		
+		OS 	"QA 
+Version"	"PROD
+Version"	Database	"QA 
+Version"	PROD Version	Data Issue	Parity Issue	Comments
+ART	"Production: 1
+QA: 0"	Microsoft Windows Server 2008 R2 Standard	No Data	6.1.7601				No Data QA		No QA Servers
+										
+										
+ATG	Production: 5									
+					Oracle Database 12c Enterprise Edition	12.1.0.2.0	No Data	No Data PROD		
+					SAP Sybase	15	15.7		Version Mismatch	PROD is higher 
+	QA: 9				SAP Sybase ASE	No Data	15.7	No Data QA		
+CFM	Production: 34	Microsoft Windows Server 2008 R2 Standard	No Data	6.1.7601				No Data QA		
+	QA: 15									
+					SAP Sybase ASE	No Data	15.7	No Data QA		
+					SAP Sybase	15	15.7		Version Mismatch	PROD is higher 
+					Oracle Database 12c Enterprise Edition	No Data	12.1.0.2.0	No Data QA		
+	Production: 13	Red Hat Linux	6.9	No Data				No Data PROD		
+CMI	QA: 68	Windows Server 2012 R2 Standard	No Data	6.3.9600				No Data QA		
+										
+										
+CMU	Production: 12	Microsoft Windows Server 2008 R2 Standard	No Data	6.1.7601				No Data QA		
+	QA: 8									
+CNS	Production: 29	Red Hat Linux	No Data	6.9				No Data QA		
+					Oracle Database 12c Enterprise Edition	No Data	12.1.0.2.0	No Data QA		
+	QA: 5 				IBM Universal Database	No Data	DB2 v10.5.0.8	No Data QA		
+CON	Production: 16	Microsoft Windows Server 2008 R2 Standard	6.1	No Data				No Data PROD		
+	QA: 51				Microsoft SQL Server 2008 R2 SP3 (Standard Edition)	10.50.6000.34	No Data	No Data PROD		
+										
+										
+										
+CTR	Production: 11	Red Hat Linux	No Data	6.9				No Data PROD		
+					Oracle Database 12c Enterprise Edition	No Data	12.1.0.2.0	No Data QA		
+	QA: 3									
+DTF	Production: 13	Red Hat Linux	No Data	5.11				No Data QA		
+	QA: 0									
+										
+										
+DVP	Production: 18	Red Hat Linux	7	No Data				No Data PROD		
+	QA: 17	Microsoft Windows Server 2008 R2 Standard	No Data	6.1.7601				No Data QA		
+										
+										
+EPN	Production: 6									
+	QA: 3				Oracle Database 12c Enterprise Edition	No Data	12.1.0.2.0	No Data QA		
+										
+FIR	Production: 13	Windows Server 2012 R2 Standard	No Data	6.3.9600				No Data QA		
+	QA: 6				SAP Sybase	15	15.7		Version Mismatch	PROD is higher 
+										
+										
+FIV	Production: 5                QA: 10									
+					Oracle Database 12c Enterprise Edition	12.1.0.2.0	No Data	No Data PROD		
+					SAP Sybase ASE	No Data	15.7	No Data QA		
+GCF	Production: 22               QA: 7	Microsoft Windows Server 2008 R2 Standard	No Data	6.1.7601				No Data QA		
+					Oracle Database 12c Enterprise Edition	No Data	12.1.0.2.0	No Data QA		
+										
+	Production: 11									
+HEP					SAP Sybase ASE	No Data	15.7	No Data QA		
+					Oracle Database 12c Enterprise Edition	12.1.0.2.0	No Data	No Data PROD		
+	QA: 9				SAP Sybase	15	15.7		Version Mismatch	PROD is higher 
+	Production: 12	Red Hat Linux	7.4	No Data				No Data PROD		
+HER					Oracle Database 12c Enterprise Edition	12.1.0.2.0	No Data	No Data PROD		
+					SAP Sybase ASE	No Data	15.7	No Data QA		
+	QA: 13				SAP Sybase	15	15.7		Version Mismatch	PROD is higher 
+IDS	Production: 8                       QA: 7									
+					Oracle Database 11g Enterprise Edition	No Data	11.2.0.4.0	No Data QA		
+										
+										
+										
+	Production: 10				SAP Sybase	15	15.7		Version Mismatch	PROD is higher 
+IGW	QA: 5				SAP Sybase ASE	No Data	15.7	No Data QA		
+										
+										
+										
+IP1	Production: 14									
+					Oracle Database 12c Enterprise Edition	12.1.0.2.0	No Data	No Data PROD		
+	QA: 9				SAP Sybase	15	15.7		Version Mismatch	PROD is higher 
+					SAP Sybase ASE	No Data	15.7	No Data QA		
+										
+										
+IPN	Production: 14				Oracle Database 12c Enterprise Edition	12.1.0.2.0	No Data	No Data PROD		
+					SAP Sybase	15	15.7		Version Mismatch	PROD is higher 
+	QA: 13									
+										
+										
+	Production: 4									
+LQS	QA: 9				SAP Sybase	15	15.7		Version Mismatch	PROD is higher 
+					Oracle Database 12c Enterprise Edition	12.1.0.2.0	No Data	No Data PROD		
+					SAP Sybase ASE	No Data	15.7	No Data QA		
+										
+										
+MMD	Production: 3             QA: 0	Red Hat Linux	No Data	6.9				No Data QA		No QA Servers
+					SAP Sybase	No Data	15.7	No Data QA		
+					SAP Sybase ASE	No Data	15.7	No Data QA		
+										
+										
+	Production: 15									
+NC1	QA: 13				SAP Sybase ASE	No Data	15.7	No Data QA		
+					Oracle Database 12c Enterprise Edition	12.1.0.2.0	No Data	No Data PROD		
+					SAP Sybase	15	15.7		Version Mismatch	PROD is higher 
+										
+NCF	Production: 7									
+	QA: 7				SAP Sybase ASE	No Data	15.7	No Data QA		
+					Oracle Database 12c Enterprise Edition	12.1.0.2.0	No Data	No Data PROD		
+					SAP Sybase	15	15.7		Version Mismatch	PROD is higher 
+	Production: 5									
+NFI	QA: 5				SAP Sybase ASE	No Data	15.7	No Data QA		
+					Oracle Database 12c Enterprise Edition	12.1.0.2.0	No Data	No Data PROD		
+					SAP Sybase	15	15.7		Version Mismatch	PROD is higher 
+NPC	Production: 11	Red Hat Linux	No Data	5.11				No Data QA		
+	QA: 2	Red Hat Linux	No Data	6.9				No Data QA		
+					Oracle Database 12c Enterprise Edition	No Data	12.1.0.2.0	No Data QA		
+										
+										
+NRC	Production: 5									
+					SAP Sybase ASE	No Data	15.7	No Data QA		
+	QA: 8				Oracle Database 12c Enterprise Edition	12.1.0.2.0	No Data	No Data PROD		
+					SAP Sybase	15	15.7		Version Mismatch	PROD is higher 
+										
+										
+OAM	Production: 25	Red Hat Linux	No Data	6.8				No Data QA		
+		Windows 7	No Version	No Data				No Data PROD		No Version QA
+	QA: 155	Red Hat Linux	7.3	No Data				No Data PROD		
+		Microsoft Windows Server 2008 R2 Standard	6.1	No Data				No Data PROD		
+		Windows Server 2012 R2 Standard	6.3.9600	No Data				No Data PROD		
+					Microsoft SQL Server 2008 R2 SP1 (Express Edition)	10.50.2500.0	No Data	No Data PROD		
+					Microsoft SQL Server 2008 R2 SP3 (Express Edition)	10.50.6000.34	No Data	No Data PROD		
+					Oracle Database 12c Enterprise Edition	12.2.0.1.0	No Data	No Data PROD		
+					SAP Sybase	15.0.3	No Data	No Data PROD		
+					Microsoft SQL Server 2012 SP3 (Standard Edition)	11.0.6020.0	No Data	No Data PROD		
+										
+OCM	Production: 25	Solaris	5	No Data				No Data PROD		
+	QA: 202	Microsoft Windows Server 2008 R2 Standard	6.1	No Data				No Data PROD		
+		Windows Server 2012 R2 Standard	No Version	No Data				No Data PROD		No  Version QA
+		Microsoft Windows Server 2008 R2 Standard	6.1.7601	No Data				No Data PROD		
+		Windows Server 2012 R2 Standard	6.3.9600	No Data				No Data PROD		
+										
+										
+										
+ODS	Production: 3									
+	QA: 2				SAP Sybase	No Data	15.7	No Data QA		
+					SAP Sybase ASE	No Data	15.7	No Data QA		
+										
+PFD	Production: 9									
+	QA: 10				SAP Sybase	15	15.7		Version Mismatch	PROD is higher 
+					SAP Sybase ASE	No Data	15.7	No Data QA		
+					Oracle Database 12c Enterprise Edition	12.1.0.2.0	No Data	No Data PROD		
+PNO	Production: 7	Solaris	5	No Data				No Data PROD		
+	QA: 34				Oracle Database 11g Enterprise Edition	11.2.0.4.0	No Data	No Data PROD		
+										
+										
+PRC	Production: 25									
+					SAP Sybase	15	15.7		Version Mismatch	PROD is higher 
+	QA: 14				SAP Sybase ASE	No Data	15.7	No Data QA		
+										
+										
+RDH	Production: 4	Red Hat Linux	No Data	6.9				No Data QA		
+					SAP Sybase ASE	15.7	No Data	No Data QA		
+	QA: 7									
+RFL	Production: 7									
+	QA: 4				IBM UDB Instance	DB2 v10.1.0.6	No Data	No Data PROD		
+					IBM Universal Database	No Data	DB2 v10.1.0.5	No Data QA		
+					Oracle Database 12c Enterprise Edition	No Data 	12.1.0.2.0	No Data QA		
+					SAP Sybase	No Data 	15.7	No Data QA		
+					SAP Sybase ASE	No Data 	15.7	No Data QA		
+										
+										
+RME	Production: 3									
+	QA: 2				SAP Sybase	No Data 	15.7	No Data QA		
+					SAP Sybase ASE	No Data 	15.7	No Data QA		
+										
+RMG	Production: 5	Red Hat Linux	No Data	5.11				No Data QA		
+	QA: 2				SAP Sybase ASE	No Data 	15.7	No Data QA		
+					Oracle Database 12c Enterprise Edition	No Data 	12.1.0.2.0	No Data QA		
+										
+										
+RSK	Production: 	Microsoft Windows Server 2008 R2 Standard	No Data	6.1.7601				No Data QA		
+	QA: 				SAP Sybase	15	15.7		Version Mismatch	PROD is higher 
+					Greenplum database instance	4.3.11.3	4.3.8.0		Version Mismatch	QA is higher
+										
+										
+										
+RSM	Production: 9									
+	QA: 8				SAP Sybase	15	15.7		Version Mismatch	PROD is higher 
+					SAP Sybase ASE	No Data 	15.7	No Data QA		
+					Oracle Database 11g Enterprise Edition	11.2.0.4.0	No Data	No Data PROD		
+RTP	Production: 34	Red Hat Linux	No Data	7				No Data QA		
+		Red Hat Linux	7.4	No Data				No Data PROD		
+	QA: 56				SAP Sybase ASE	No Data 	15.7	No Data QA		
+					SAP Sybase	15	15.7		Version Mismatch	PROD is higher 
+SEC	Production: 11	Red Hat Linux	5.11	No Data				No Data PROD		
+										
+	QA: 6									
+SMD	Production: 13	Red Hat Linux	7	No Data				No Data PROD		
+	QA: 4									
+										
+SSC	Production: 4									
+					SAP Sybase	No Data	15.7	No Data QA		
+	QA: 2				SAP Sybase ASE	No Data	15.7	No Data QA		
+					Oracle Database 12c Enterprise Edition	No Data 	12.1.0.2.0	No Data QA		
+										
+SWF	Production: 6	Red Hat Linux	6.9	No Data				No Data PROD		
+										
+	QA: 9									
+SXR	Production: 1	Solaris	No Data	5.8				No Data QA		No QA Servers
+	QA: 0									
+										
+TSW	Production: 25	Windows Server 2012 R2 Standard	2	No Data				No Data PROD		
+	QA: 21				Oracle Database 11g Enterprise Edition	No Data	11.2.0.4.0	No Data QA		
+										
+										
+TXP	Production: 6	Microsoft Windows Server 2008 R2 Standard	No Data	6.1.7601				No Data QA		
+	QA: 4									
+										
+VA1	Production: 6									
+	QA: 9				SAP Sybase	15	15.7		Version Mismatch	PROD is higher 
+					SAP Sybase ASE	No Data	15.7	No Data QA		
+					Oracle Database 12c Enterprise Edition	12.1.0.2.0	No Data	No Data PROD		
+										
+VAN	Production: 11									
+	QA: 8				SAP Sybase	15	15.7		Version Mismatch	PROD is higher 
+					SAP Sybase ASE	No Data	15.7	No Data QA		
+					Oracle Database 12c Enterprise Edition	12.1.0.2.0	No Data	No Data PROD		
+										
+										
+VAP	Production: 11									
+	QA: 7				Oracle Database 12c Enterprise Edition	12.1.0.2.0	No Data	No Data PROD		
+					SAP Sybase	15	15.7		Version Mismatch	PROD is higher 
+					SAP Sybase ASE	No Data	15.7	No Data QA		
+XPM	Production: 10	Red Hat Linux	No Data	6.9				No Data QA		
+	QA: 2 	Microsoft Windows Server 2008 R2 Standard	No Data	6.1.7601				No Data QA		
+		Microsoft Windows 2008 Server Enterprise	No Data	6.0.6002				No Data QA		
+					Oracle Database 12c Enterprise Edition	No Data 	12.1.0.2.0	No Data QA		
+										
+
+			
