@@ -1,62 +1,44 @@
-import json, sys
-import random
-import pandas as pd
-import numpy as np
-from pandas import ExcelWriter
+import getopt, sys
 
-def add_stats(row, di):
-    if(di[row[0]+ ' ' +row[1]][0] >= 1 ):
-        label = 'Match'
-    elif(di[row[0]+ ' ' +row[1]][1] > 0 and di[row[0]+ ' ' +row[1]][2] > 0):
-        label = 'Mismatch'
-    else:
-        label = row[5]      
-    return label 
+def usage():
+	print("Script Usage:")
+	print("-h OR --help					: To print Help")
+	print("-i <input-file>  OR --input <input-file>	: To provide input file taken from SNOW")
+	print("-o <output-file> OR --output <output-file>	: To provide output file name")
+	print("-r <report-flag> OR --report <report-flag>	: To provide report flag. report-flag options are 'all','os','db','mw'")
+	print("-s <subset-file> OR --subset <subset-file>	: To provide subset sysIDs input file")
+	
 
-def process_data(sub_table):
-    data = sub_table.values.tolist()
-    for each in data:
-        if(each[3] == 0):
-            each.append('No Prod')
-        if(each[4] == 0):
-            each.append('No QA')
-        if(each[3]>0 and each[4]>0):
-            each.append('Match')
-
-    di = {}
-    for each in data:
-        di[each[0]+ ' ' + each[1]] = [0,0,0]
-
-    for each in data:
-        key = each[0]+ ' ' + each[1]
-        if(each[5] == 'Match'):
-            di[key][0] +=  1
-        if(each[5] == 'No Prod'):
-            di[key][1] +=  1
-        if(each[5] == 'No QA'):
-            di[key][2] +=  1   
-            
-    data = pd.DataFrame(data, columns=['Application', 'OS', 'Version', 'Prod', 'QA', 'Temp'])
-    data['Stats'] = data.apply(lambda row: add_stats(row, di), axis=1)
-    df = data.drop('Temp', 1)
-    return df
-
-def write_to_file(df):
-    df1, df2, df3, df4 = df.loc[df['Stats'] == 'Match'], df.loc[df['Stats'] == 'Mismatch'], df.loc[df['Stats'] == 'No Prod'], df.loc[df['Stats'] == 'No QA']
-    wr = ExcelWriter('Final_Output.xlsx')
-    df1.to_excel(wr,'Match', index = False)
-    df2.to_excel(wr,'Mismatch', index = False)
-    df3.to_excel(wr,'No Prod', index = False)
-    df4.to_excel(wr,'No QA', index = False)
-    wr.save()
-    
-emp = {}
-df = pd.read_excel("Asset_Report.xlsx",sheet_name='Raw Data')
-df_subset = df[['Application','Component', 'Environment','Server Operating System','Server OS Version','Power State','# Virtual Disks']]
-columns = df_subset.head(0)  ## Getting top row as header
-table=pd.pivot_table(df_subset,index=["Application","Server Operating System","Server OS Version"],values=["Component"],columns=["Environment"],aggfunc=[len],fill_value=0,dropna=True)
-sub_table = table.query('Application == ["ABC","ART","XYZ","PQR"]').reset_index()
-sub_table = pd.DataFrame(sub_table)
-
-df = process_data(sub_table)
-write_to_file(df)
+def main():
+	try:
+		opts, args = getopt.getopt(sys.argv[1:], "hoirs:v", ["help", "output="])
+	except getopt.GetoptError as err:
+		print(err) # will print something like "option -a not recognized"
+		usage()
+		sys.exit(2)
+	output = None
+	verbose = False
+	for opt, arg in opts:
+		if opt in ('-o', '--output'):
+			print('Setting --output.')
+			output_file = arg
+		elif opt in ('-d', '--debug'):
+			print('Setting --debug.')
+			debug = True
+		elif opt in ('-i', '--input'):
+			print('Setting --input.')
+			input_file = arg
+		elif opt in ('-r', '--report'):
+			print("Setting report flag")
+			report_flag = arg
+		elif opt in ('-s', '--subset'):
+			print('Setting --subset.')
+			subset_file = arg
+		elif opt in ("-h", "--help"):
+				usage()
+				sys.exit()
+		else:
+			assert False, "Un-handled option"
+			
+	print(output_file)
+        
